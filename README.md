@@ -68,3 +68,72 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+### Mutation   
+    Mutable - changes
+    Immutable- Doesn't change 
+
+### Pure	
+    1. Pure Functions  
+   		○ Should have parameters
+		○ Should return result
+		○ Should not have side effects
+
+        -->  Object.Assign() Used  to achieve pure
+             … spread operator to create a new object     
+    2. Push fn changes the original array -- not a pure functions   instead use concat fn.
+    3. Create new app npx create-react-app test
+    4. Function component : We return the body
+    5. Class component : We return in side the render  (Class app extends React.Component)
+    6. Arrow functions doesn't need to bind
+        ```
+        class Counter extends React.Component {
+            constructor(props) {
+                super(props)
+                this.state = { counter: 0 }
+                this.onIncrement = this.onIncrement.bind(this)
+                //this.onDecrement = this.onDecrement.bind(this)
+            }
+            onIncrement() {
+                this.setState({ counter: this.state.counter + 2 })    //Binding is required Line:8
+            }
+            onDecrement = () => this.setState({ counter: this.state.counter - 2 })  // Binding is not required
+
+            render() {
+                return (
+                    <div className="App">
+                        <p>Counter:  {this.state.counter}</p>
+                        <CounterFn counter= {this.state.counter} /><br />
+                        <button onClick={this.onIncrement}>Increment</button><br />
+                        <button onClick={this.onDecrement}>Decrement</button>
+                    </div>
+                );
+            }
+        }
+        export default Counter;
+        ```
+    7. Axios uses to make web service calls
+	8. Pure functions 
+		○ Should have parameters
+		○ Should return result
+		○ Should not have side effects
+    9. Formik lib to design forms 
+
+### Hooks
+	1. Before 16.8.0
+        State base Component use Class
+        Static base use functional
+
+	2. After 16.8.0
+	    React functional components for both Stateful and stateless
+
+        Class - State  setState
+        Function - hooks useState
+        
+        Hooks only for functions 
+ ## UseEffect
+    Fires at the time of page load   === componentDidMount
+    Can do conditionally also
+    
