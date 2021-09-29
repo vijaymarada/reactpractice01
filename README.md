@@ -133,6 +133,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
         Function - hooks useState
         
         Hooks only for functions 
+
+        Aim of the HOOKS is to statisfy/Support all the state functionalities there in component into functions
  ## UseEffect
     Fires at the time of page load   === componentDidMount
     Can do conditionally also

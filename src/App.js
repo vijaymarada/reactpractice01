@@ -20,7 +20,9 @@ import HFormikFormPost from './13-Hooks/HFormikFormPost'
 import HUseEffect from './13-Hooks/HUseEffect'
 import HUseEffectDynamicData from './13-Hooks/HUseEffectDynamicData'
 import ClippyEx from './14-Clippy/ClippyEx'
-
+import NetworkDetails from './15-NetworkHook/NetworkDetails'
+import TextToSpeech from './16-Text2Speech/TextToSpeech'
+import FContext from './17-FunctionContext/FContext'
 function App() {
   return (
     <div className="App">
@@ -33,9 +35,9 @@ function App() {
         <RestDataFromJson /><br />
         <label>--------------- Axios----------------------------</label>
         <GetRestData></GetRestData><br />
-        <label>-------------- Pure Component--------------------</label>        
+        <label>-------------- Pure Component--------------------</label>
         <PureCompEx></PureCompEx><br />
-        <label>--------------------------------------- Day 2 -----------------------------------------</label> <br/>
+        <label>--------------------------------------- Day 2 -----------------------------------------</label> <br />
 
         <label>--------------- Contolled Componenets -----------</label>
         <FormControlex></FormControlex><br />
@@ -53,26 +55,32 @@ function App() {
         <DisplayMatUI></DisplayMatUI>
 
         <SelectUI></SelectUI>
-        <label>--------------------------------------- Day 3 -----------------------------------------</label> <br/>
-        <label>--------------- Hooks Counter ---------</label> <br/>
+        <label>--------------------------------------- Day 3 -----------------------------------------</label> <br />
+        <label>--------------- Hooks Counter ---------</label> <br />
         <HCounter></HCounter>
-        <label>--------------- Hooks Form post axios Controlled ---------</label> <br/>
+        <label>--------------- Hooks Form post axios Controlled ---------</label> <br />
         <HFormPost></HFormPost>
-        <label>--------------- Hooks Form post axios Uncontrolled ---------</label><br/>
+        <label>--------------- Hooks Form post axios Uncontrolled ---------</label><br />
         <HFormPostUnControlled></HFormPostUnControlled>
-        <label>--------------- Hooks Formik Form post axios --------------------</label><br/>
+        <label>--------------- Hooks Formik Form post axios --------------------</label><br />
 
         <HFormikFormPost></HFormikFormPost>
-        <label>----------------------- Hooks useEffect ---------------------</label><br/>
+        <label>----------------------- Hooks useEffect ---------------------</label><br />
 
         <HUseEffect></HUseEffect>
-        <label>----------------------- Hooks useEffect dynamic content ---------------------</label><br/>
+        <label>----------------------- Hooks useEffect dynamic content ---------------------</label><br />
 
         <HUseEffectDynamicData />
-        <label>----------------------- Hooks Cippy for copying data ---------------------</label><br/>
+        <label>----------------------- Hooks Cippy for copying data ---------------------</label><br />
 
-        <ClippyEx></ClippyEx>
-{/* <ContextEx></ContextEx> */}
+        <ClippyEx></ClippyEx><br />
+        <label>----------------------- Hooks for network details ---------------------</label><br />
+        <NetworkDetails></NetworkDetails>
+        <br />
+        <label>----------------------- Text to speech ---------------------</label><br />
+        <TextToSpeech></TextToSpeech>
+<FContext></FContext>
+        {/* <ContextEx></ContextEx> */}
       </header>
     </div>
   );
