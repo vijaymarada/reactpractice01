@@ -1,3 +1,19 @@
+## Important points to run all examples
+
+    If you are trying examples other than react redux (i.e. from 1-17 folders)
+    Please uncomment below changes in index.js and comment Redux provider lines 
+
+    ```
+      // <React.StrictMode>    //uncomment this while not using redux
+      //   <App />
+      // </React.StrictMode>,
+
+        <Provider store={store}>
+            <App />
+        </Provider>,
+        
+    ```    
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -88,7 +104,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
     4. Function component : We return the body
     5. Class component : We return in side the render  (Class app extends React.Component)
     6. Arrow functions doesn't need to bind
-        ```
+    ```
         class Counter extends React.Component {
             constructor(props) {
                 super(props)
@@ -113,7 +129,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
             }
         }
         export default Counter;
-        ```
+    ```
     7. Axios uses to make web service calls
 	8. Pure functions 
 		○ Should have parameters
@@ -135,7 +151,28 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
         Hooks only for functions 
 
         Aim of the HOOKS is to statisfy/Support all the state functionalities there in component into functions
- ## UseEffect
+### UseEffect
     Fires at the time of page load   === componentDidMount
     Can do conditionally also
+    
+### Redux
+    1. State Management framework
+    2. Independent framework (can use in jquery, Angualr...)
+    3. Redux can be used for both class and functional components 
+
+        ○ User Interface (HTML, JQuery, React)
+        ○ Action
+        ○ Middleware (Fetching and transform)(optional)
+        ○ Reducer (State management) (pure function) 
+        ○ Store (reducer + middleware) 
+
+            UI(action) ---> Action {type:''} ---> Middleware(one or more) --> Reducer(state manager) --> UI
+                                          (fetching & transform)  
+    Advantages:
+        ○ Clean code 
+        ○ Reusability
+        
+        npm install redux
+        npm install react-redux (plug-in for integration React and Redux)
+
     
