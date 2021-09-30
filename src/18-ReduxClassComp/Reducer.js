@@ -9,7 +9,6 @@ const Reducer = (state = { counter: 0, data: {}, todoId: '' }, action) => {
         return Object.assign({}, state, { todoId: action.todoId })
     }
     if (action.type === 'TODO_ID_FETCHED') {
-        debugger;
         return Object.assign({}, state, { data: action.data })
     }
 

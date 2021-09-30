@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 import { Provider } from 'react-redux';
-import store from './18-Redux/Store';
+import store from './18-ReduxClassComp/Store';
 
 ReactDOM.render(
   // <React.StrictMode>    //uncomment this while not using redux

@@ -23,8 +23,9 @@ import ClippyEx from './14-Clippy/ClippyEx'
 import NetworkDetails from './15-NetworkHook/NetworkDetails'
 import TextToSpeech from './16-Text2Speech/TextToSpeech'
 import FContext from './17-FunctionContext/FContext'
-import BaseforReactRedux from './18-Redux/BaseforReduxApp'
-import FormApp from './19-ReduxFrom/FormApp'
+import BaseforReactRedux from './18-ReduxClassComp/BaseforReduxApp'
+import FormApp from './19-ReduxFromClassComp/FormApp'
+import ReduxFnApp from './20-ReduxFunctionComp/ReduxFnApp'
 function App() {
   return (
     <div className="App">
@@ -88,6 +89,8 @@ function App() {
 
         <BaseforReactRedux></BaseforReactRedux>
         <FormApp></FormApp>
+
+        <ReduxFnApp></ReduxFnApp>
       </header>
     </div>
   );
