@@ -1,5 +1,4 @@
 const Reducer = (state = { counter: 0, data: {}, todoId: '' }, action) => {
-    debugger;
     if (action.type === 'INCREMENT') {
         return Object.assign({}, state, { counter: state.counter + 1 })
     }

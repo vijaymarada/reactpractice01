@@ -24,6 +24,7 @@ import NetworkDetails from './15-NetworkHook/NetworkDetails'
 import TextToSpeech from './16-Text2Speech/TextToSpeech'
 import FContext from './17-FunctionContext/FContext'
 import BaseforReactRedux from './18-Redux/BaseforReduxApp'
+import FormApp from './19-ReduxFrom/FormApp'
 function App() {
   return (
     <div className="App">
@@ -86,6 +87,7 @@ function App() {
         <label>----------------------- React - Redux -- Counter ---------------------</label><br />
 
         <BaseforReactRedux></BaseforReactRedux>
+        <FormApp></FormApp>
       </header>
     </div>
   );
